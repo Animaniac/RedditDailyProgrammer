@@ -1,0 +1,7 @@
+c:\users\rhys\documents\visual studio 2015\Projects\RedditDailyProgrammer\RedditDailyProgrammer\bin\Debug\RedditDailyProgrammer.exe.config
+C:\Users\Rhys\Desktop\RedditProgarmming\RedditDailyProgrammer\bin\Debug\RedditDailyProgrammer.exe.config
+C:\Users\Rhys\Desktop\RedditProgarmming\RedditDailyProgrammer\bin\Debug\RedditDailyProgrammer.exe
+C:\Users\Rhys\Desktop\RedditProgarmming\RedditDailyProgrammer\bin\Debug\RedditDailyProgrammer.pdb
+C:\Users\Rhys\Desktop\RedditProgarmming\RedditDailyProgrammer\obj\Debug\RedditDailyProgrammer.csprojResolveAssemblyReference.cache
+C:\Users\Rhys\Desktop\RedditProgarmming\RedditDailyProgrammer\obj\Debug\RedditDailyProgrammer.exe
+C:\Users\Rhys\Desktop\RedditProgarmming\RedditDailyProgrammer\obj\Debug\RedditDailyProgrammer.pdb
