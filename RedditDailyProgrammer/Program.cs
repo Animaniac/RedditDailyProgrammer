@@ -10,7 +10,7 @@ namespace RedditDailyProgrammer
     {
         static void Main()
         {
-            new Challenge3();
+            new Challenge5();
         }
     }
 }
