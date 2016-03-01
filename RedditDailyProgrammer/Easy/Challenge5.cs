@@ -25,7 +25,7 @@ namespace RedditDailyProgrammer
 
                 if (ValidatePassword(enteredUserName, enteredPassWord))
                     {
-                        
+                        result = true;
                         Console.WriteLine("Welcome {0} enjoy", userName);
                     }
                 else
