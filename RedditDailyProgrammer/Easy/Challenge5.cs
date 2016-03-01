@@ -14,26 +14,41 @@ namespace RedditDailyProgrammer
         {
             var userName = "Rhys";
             var passWord = "password";
-            var validCredentials = false;
-            
-            while (validCredentials == false)
+            bool result = false;
+            StorePassword(userName, passWord);
+            while (result == false)
             {
                 Console.WriteLine("Hello and welcome to the program, please enter your username");
                 var enteredUserName = Console.ReadLine();
                 Console.WriteLine("and now your password");
                 var enteredPassWord = Console.ReadLine();
 
-                if (userName == enteredUserName && passWord == enteredPassWord)
+                if (ValidatePassword(enteredUserName, enteredPassWord))
                     {
-                        validCredentials = true;
+                        
                         Console.WriteLine("Welcome {0} enjoy", userName);
                     }
                 else
                     {
                         Console.WriteLine("Your username or password was wrong");
-                        validCredentials = false;
+                        
                     }
             }
+        }
+
+        bool ValidatePassword(string username, string password)
+        {
+            string[] content = System.IO.File.ReadAllLines(@"C:\Users\Rhys\Desktop\RedditProgarmming\RedditDailyProgrammer\Easy\Resources\Credentials.txt");
+
+            if (username != content[0]) return false; 
+
+            string[] saltAndHash = content[1].Split(':');
+
+            string hash = GetHash(saltAndHash[0] + password);
+
+            if (hash == saltAndHash[1]) return true;
+            else return false;
+
         }
 
         private void StorePassword(string username, string password)
@@ -49,7 +64,7 @@ namespace RedditDailyProgrammer
             string saltedHash = salt + ":" + hash;
             string[] credentials = new string[] { username, saltedHash };
 
-            System.IO.File.WriteAllLines(@"D:\C#\test.txt", credentials);
+            System.IO.File.WriteAllLines(@"C:\Users\Rhys\Desktop\RedditProgarmming\RedditDailyProgrammer\Easy\Resources\Credentials.txt", credentials);
 
         }
 
