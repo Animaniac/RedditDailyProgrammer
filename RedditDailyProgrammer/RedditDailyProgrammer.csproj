@@ -48,6 +48,7 @@
     <Compile Include="Easy\Challenge3.cs" />
     <Compile Include="Easy\Challenge4.cs" />
     <Compile Include="Easy\Challenge5.cs" />
+    <Compile Include="Easy\Challenge6.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
